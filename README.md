@@ -17,7 +17,7 @@ Ex: you can choose which JSON schema to apply, based on the `req.headers` values
 npm install fastify-schema-constraint
 ```
 
-This plugin support Node.js >=6 and Fastify ^2
+This plugin support Node.js >=6 and Fastify ^2.2.x
 
 
 ## Usage

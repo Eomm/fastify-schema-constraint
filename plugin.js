@@ -80,8 +80,7 @@ function schemaConstraint (instace, opts, next) {
     if (lazyValidators[lazyKey] != null) {
       validatorFunction = lazyValidators[lazyKey]
     } else {
-      // TODO: don't use private fields instace._schemaCompiler
-      validatorFunction = instace._schemaCompiler(mandatorySchema)
+      validatorFunction = instace.schemaCompiler(mandatorySchema)
       lazyValidators[lazyKey] = validatorFunction
     }
 
@@ -96,6 +95,6 @@ function schemaConstraint (instace, opts, next) {
 }
 
 module.exports = fp(schemaConstraint, {
-  fastify: '>=2.0.0',
+  fastify: '>=2.2.0',
   name: 'fastify-schema-constraint'
 })
