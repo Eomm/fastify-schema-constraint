@@ -199,7 +199,7 @@ test('constraint in action', t => {
       t.deepEqual(JSON.parse(res.payload), {
         statusCode: 400,
         error: 'Bad Request',
-        message: `JSON schema $id #schema404 not found in the 'schema.querystring.oneOf' route settings`
+        message: 'JSON schema $id #schema404 not found in the \'schema.querystring.oneOf\' route settings'
       })
     })
   })
@@ -222,7 +222,7 @@ test('constraint in action', t => {
         t.deepEqual(JSON.parse(res.payload), {
           statusCode: 400,
           error: 'Bad Request',
-          message: `Schema constraint failure: the params doesn't match the JSON schema #schema1`
+          message: 'Schema constraint failure: the params doesn\'t match the JSON schema #schema1'
         })
       })
   })
@@ -259,7 +259,7 @@ test('constraint in action', t => {
       t.deepEqual(JSON.parse(res.payload), {
         statusCode: 500,
         error: 'Internal Server Error',
-        message: `Schema constraint function error for headers: Unexpected error`
+        message: 'Schema constraint function error for headers: Unexpected error'
       })
     })
   })
