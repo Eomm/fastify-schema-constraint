@@ -1,0 +1,31 @@
+name: Node CI
+
+on:
+  push:
+  schedule:
+  - cron:  '1 0 * * 0'
+
+jobs:
+  test:
+    name: Test suite
+   
+    strategy:
+      matrix:
+        node-version: [6.x, 8.x, 10.x, 12.x]
+        os: [ubuntu-latest, windows-latest]
+    
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }} in ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: fresh install and test
+      run: |
+        npm install
+        npm test
+      env:
+        CI: true
