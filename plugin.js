@@ -12,7 +12,7 @@ function schemaConstraint (instace, opts, next) {
   }, opts)
 
   let almostOne = false
-  for (let field of SCHEMA_FIELDS) {
+  for (const field of SCHEMA_FIELDS) {
     const fieldOptions = config[field]
     almostOne = almostOne || fieldOptions.constraint != null
     if (fieldOptions.constraint !== undefined && typeof fieldOptions.constraint !== 'function') {
