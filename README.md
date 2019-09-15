@@ -1,4 +1,4 @@
-# fastify-schema-constraint
+# fastify-schema-constraint test workflow
 
 [![Coverage Status](https://coveralls.io/repos/github/Eomm/fastify-schema-constraint/badge.svg?branch=master)](https://coveralls.io/github/Eomm/fastify-schema-constraint?branch=master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
