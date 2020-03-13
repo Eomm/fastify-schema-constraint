@@ -1,6 +1,7 @@
 # fastify-schema-constraint
 
 [![Coverage Status](https://coveralls.io/repos/github/Eomm/fastify-schema-constraint/badge.svg?branch=master)](https://coveralls.io/github/Eomm/fastify-schema-constraint?branch=master)
+[![Build Status](https://github.com/Eomm/fastify-schema-constraint/workflows/ci/badge.svg)](https://github.com/Eomm/fastify-schema-constraint/actions)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Choose the right JSON schema to apply to your routes based on your constraints.
