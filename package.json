@@ -1,6 +1,6 @@
 {
   "name": "fastify-schema-constraint",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Choose the right JSON schema to apply to your routes based on your constraints",
   "main": "plugin.js",
   "scripts": {
