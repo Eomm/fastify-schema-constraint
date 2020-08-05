@@ -17,8 +17,8 @@ Ex: you can choose which JSON schema to apply, based on the `req.headers` values
 npm install fastify-schema-constraint
 ```
 
-This plugin support Node.js >=6 and Fastify ^2.2.x
-
+This plugin support Node.js >=10 and Fastify ^3
+Checkout the v1 for Fastify v2.
 
 ## Usage
 
@@ -105,8 +105,8 @@ Each constraint field accepts a json in this format:
 
 + if the constraint function returns something different than a string, the validation will be skipped!
 + if the constraint function throws an error, an error will be thrown
-+ if the returned $id isn't present in the `oneOf` array an error will be thrown
-+ if the payload verified doesn't match with the returned $id, an error will be thrown
++ if the returned `$id` isn't present in the `oneOf` array an error will be thrown
++ if the payload verified doesn't match with the returned `$id`, an error will be thrown
 
 ## License
 
