@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Eomm/fastify-schema-constraint#readme",
   "devDependencies": {
-    "fastify": "^2.15.2",
+    "fastify": "^3.1.1",
     "standard": "^14.3.4",
     "tap": "^12.7.0"
   },
