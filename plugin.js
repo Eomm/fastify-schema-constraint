@@ -80,7 +80,11 @@ function schemaConstraint (instace, opts, next) {
     if (lazyValidators[lazyKey] != null) {
       validatorFunction = lazyValidators[lazyKey]
     } else {
-      validatorFunction = instace.schemaCompiler(mandatorySchema)
+      validatorFunction = instace.validatorCompiler({
+        schema: mandatorySchema,
+        method: req.method,
+        httpPart: paramName
+      })
       lazyValidators[lazyKey] = validatorFunction
     }
 

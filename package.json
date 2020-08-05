@@ -23,18 +23,18 @@
   "author": "Manuel Spigolon <behemoth89@gmail.com> (https://github.com/Eomm)",
   "license": "MIT",
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "bugs": {
     "url": "https://github.com/Eomm/fastify-schema-constraint/issues"
   },
   "homepage": "https://github.com/Eomm/fastify-schema-constraint#readme",
   "devDependencies": {
-    "fastify": "^2.15.2",
+    "fastify": "^3.1.1",
     "standard": "^14.3.4",
-    "tap": "^12.7.0"
+    "tap": "^14.10.8"
   },
   "dependencies": {
-    "fastify-plugin": "^1.6.1"
+    "fastify-plugin": "^2.1.1"
   }
 }
