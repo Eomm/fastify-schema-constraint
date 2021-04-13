@@ -170,7 +170,7 @@ test('constraint in action', t => {
     }, (err, res) => {
       t.error(err)
       t.equal(res.statusCode, 412)
-      t.deepEqual(JSON.parse(res.payload), {
+      t.same(JSON.parse(res.payload), {
         statusCode: 412,
         error: 'Precondition Failed',
         message: 'This constraint return only #schema1'
@@ -196,7 +196,7 @@ test('constraint in action', t => {
     }, (err, res) => {
       t.error(err)
       t.equal(res.statusCode, 400)
-      t.deepEqual(JSON.parse(res.payload), {
+      t.same(JSON.parse(res.payload), {
         statusCode: 400,
         error: 'Bad Request',
         message: 'JSON schema $id #schema404 not found in the \'schema.querystring.oneOf\' route settings'
@@ -219,7 +219,7 @@ test('constraint in action', t => {
       (err, res) => {
         t.error(err)
         t.equal(res.statusCode, 400)
-        t.deepEqual(JSON.parse(res.payload), {
+        t.same(JSON.parse(res.payload), {
           statusCode: 400,
           error: 'Bad Request',
           message: 'Schema constraint failure: the params doesn\'t match the JSON schema #schema1'
@@ -256,7 +256,7 @@ test('constraint in action', t => {
     (err, res) => {
       t.error(err)
       t.equal(res.statusCode, 500)
-      t.deepEqual(JSON.parse(res.payload), {
+      t.same(JSON.parse(res.payload), {
         statusCode: 500,
         error: 'Internal Server Error',
         message: 'Schema constraint function error for headers: Unexpected error'
