@@ -108,6 +108,7 @@ Each constraint field accepts a json in this format:
 + if the returned `$id` isn't present in the `oneOf` array an error will be thrown
 + if the payload verified doesn't match with the returned `$id`, an error will be thrown
 
+
 ## License
 
 Copyright [Manuel Spigolon](https://github.com/Eomm), Licensed under [MIT](./LICENSE).
