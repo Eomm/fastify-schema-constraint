@@ -1,4 +1,5 @@
 'use strict'
+
 const fp = require('fastify-plugin')
 
 const SCHEMA_FIELDS = ['body', 'querystring', 'params', 'headers']
