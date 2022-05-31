@@ -1,7 +1,7 @@
 # fastify-schema-constraint
 
-[![Coverage Status](https://coveralls.io/repos/github/Eomm/fastify-schema-constraint/badge.svg?branch=master)](https://coveralls.io/github/Eomm/fastify-schema-constraint?branch=master)
 [![Build Status](https://github.com/Eomm/fastify-schema-constraint/workflows/ci/badge.svg)](https://github.com/Eomm/fastify-schema-constraint/actions)
+[![npm](https://img.shields.io/npm/v/fastify-schema-constraint)](https://www.npmjs.com/package/fastify-schema-constraint)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Choose the right JSON schema to apply to your routes based on your constraints.
@@ -17,8 +17,13 @@ Ex: you can choose which JSON schema to apply, based on the `req.headers` values
 npm install fastify-schema-constraint
 ```
 
-This plugin support Node.js >=10 and Fastify ^3
-Checkout the v1 for Fastify v2.
+### Compatibility
+
+| Plugin version | Fastify version |
+| ------------- |:---------------:|
+| `^1.0.0` | `^2.0.0` |
+| `^2.0.0` | `^3.0.0` |
+
 
 ## Usage
 
