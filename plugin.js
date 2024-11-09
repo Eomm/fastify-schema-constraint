@@ -34,13 +34,13 @@ function schemaConstraint (instace, opts, next) {
   next()
 
   function applyContraints (req, reply, next) {
-    if (!reply.context.schema) {
+    if (!reply.request.routeOptions.schema) {
       return next()
     }
     let field
     try {
       for (field of SCHEMA_FIELDS) {
-        contraintValidation(field, req, reply.context.schema[field])
+        contraintValidation(field, req, reply.request.routeOptions.schema[field])
       }
       next()
     } catch (error) {
@@ -100,6 +100,6 @@ function schemaConstraint (instace, opts, next) {
 }
 
 module.exports = fp(schemaConstraint, {
-  fastify: '>=2.2.0',
+  fastify: '^5.0.0',
   name: 'fastify-schema-constraint'
 })

@@ -4,11 +4,9 @@
   "description": "Choose the right JSON schema to apply to your routes based on your constraints",
   "main": "plugin.js",
   "scripts": {
-    "unit": "tap -J test/**/*.test.js",
+    "test": "borp --coverage --check-coverage",
     "lint": "standard",
-    "lint:fix": "standard --fix",
-    "test": "npm run lint && npm run unit",
-    "coveralls": "npm test -- --cov"
+    "lint:fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -23,18 +21,18 @@
   "author": "Manuel Spigolon <behemoth89@gmail.com> (https://github.com/Eomm)",
   "license": "MIT",
   "engines": {
-    "node": ">=10"
+    "node": ">=20"
   },
   "bugs": {
     "url": "https://github.com/Eomm/fastify-schema-constraint/issues"
   },
   "homepage": "https://github.com/Eomm/fastify-schema-constraint#readme",
   "devDependencies": {
-    "fastify": "^4.0.0-rc.3",
-    "standard": "^17.0.0",
-    "tap": "^16.2.0"
+    "borp": "^0.18.0",
+    "fastify": "^5.0.0",
+    "standard": "^17.0.0"
   },
   "dependencies": {
-    "fastify-plugin": "^4.0.0"
+    "fastify-plugin": "^5.0.0"
   }
 }
