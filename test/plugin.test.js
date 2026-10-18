@@ -154,8 +154,6 @@ describe('constraint in action', () => {
       query: { mul3: 9, schemaNumber: 2 },
       headers: { mul2: 4, schemaNumber: 3 }
     }, (err, res) => {
-      console.log(res.payload)
-
       t.assert.ifError(err)
       t.assert.strictEqual(res.statusCode, 200)
       t.assert.strictEqual(res.payload, 'hi')
